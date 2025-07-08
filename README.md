@@ -36,17 +36,30 @@ Recommendation_Engine/
 ## 📱 Screenshots
 
 ### 🧾 1. Database Table in Supabase
-![Database](Screenshots/1.png)
+
+<img width="521" height="444" alt="Image" src="https://github.com/user-attachments/assets/86ac4dad-ecc8-4c19-a899-d5d20f12b350" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### 💬 2. Chat UI Interface
-![Chat UI](Screenshots/first.png)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/2e0482a2-52e3-4bdb-903f-52e5d0e8ecdc" />
 
 ### 📊 3. Recommendation Output by sentence transformer
-![Recommendation](Screenshots/4.png)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/35d2fd52-7c26-45e1-8d9d-9ca2db75a4f3" />
 
 ### 🔄 4. t8 chatbot answer
-![t8 answer](Screenshots/last.png)
+<img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cac67b39-ca58-4652-861b-3023de19238a" />
 
 ### 5.similarly deepseek also results query
 
