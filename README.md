@@ -36,7 +36,7 @@ Recommendation_Engine/
 ## 📱 Screenshots
 
 ### 🧾 1. Database Table in Supabase
-<img src="Screenshots/1.png" width="600"/>
+![Database](Screenshots/1.png)
 
 
 ### 💬 2. Chat UI Interface
