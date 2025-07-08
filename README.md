@@ -32,6 +32,19 @@ Recommendation_Engine/
 └── .env # Environment variables (API keys, DB URL)
 
 
+```
+## 📱 Screenshots
+---
+
+![Database](Screenshots/2025-07-07 170900.png)
+  **Database Structure:** can see columns associated with database.
+
+
+
+
+
+
+
 
 ---
 
