@@ -22,7 +22,7 @@ Recommendation_Engine/
 ├── app/ # Core logic
 │ ├── model.py # Embedding model & Supabase sync
 │ ├── recommender.py # Top-k recommendation logic
-│
+├── Screenshots   # see screenshots inside it 
 ├── data/ # Dataset and preprocessed files
 │ └── cleaned_book_dataset.csv (many but final csv file this in use)
 │
@@ -38,6 +38,8 @@ Recommendation_Engine/
 
 ![Database](Screenshots/1.png)
   **Database Structure:** can see columns associated with database.
+
+![Frontend](Screenshotschat
 
 
 
