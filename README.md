@@ -36,7 +36,7 @@ Recommendation_Engine/
 ## 📱 Screenshots
 ---
 
-![Database](Screenshots/2025-07-07 170900.png)
+![Database](Screenshots/ Screenshot 2025-07-07 170900.png)
   **Database Structure:** can see columns associated with database.
 
 
