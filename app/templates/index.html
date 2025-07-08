@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Recommender</title>
+    <style>
+        body, h1, p, ul, li, form, input, button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: #f4f7f8;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 40px 20px;
+        }
+
+        .container {
+            background: white;
+            max-width: 700px;
+            width: 100%;
+            border-radius: 8px;
+            padding: 30px 40px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+            color: #0077cc;
+            text-align: center;
+            letter-spacing: 1.1px;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            flex: 1;
+            padding: 12px 15px;
+            font-size: 1rem;
+            border: 2px solid #0077cc;
+            border-radius: 6px;
+        }
+
+        button {
+            padding: 12px 18px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            background-color: #0077cc;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            border-top: 1px solid #ddd;
+        }
+
+        li {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        li strong {
+            color: #005fa3;
+            font-size: 1.3rem;
+        }
+
+        .chatbot-section {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #f9fcff;
+            border-left: 4px solid #0077cc;
+            border-radius: 4px;
+        }
+
+        .chatbot-section h2 {
+            color: #0077cc;
+            margin-bottom: 10px;
+        }
+
+        .chatbot-section p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        .form-buttons {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Book Recommender</h1>
+
+        <!-- Main Form -->
+        <form id="recommend-form" method="post">
+            <input type="text" name="query" placeholder="Describe a book or your interests" required />
+            <input type="hidden" name="model" id="model-input" value="t5" />
+            <div class="form-buttons">
+                <button type="submit" onclick="submitTo('/submit', 't5')">Use T5</button>
+                <button type="submit" onclick="submitTo('/deepseek', 'deepseek')">Use DeepSeek</button>
+            </div>
+        </form>
+
+        {% if results %}
+            <ul>
+                {% for book in results %}
+                <li>
+                    <strong>{{ book.title }}</strong><br />
+                    <span class="authors">by {{ book.authors }}</span><br />
+                    <span class="rating">Rating: {{ book.average_rating }}</span><br />
+                    <span class="similarity">Similarity Score: {{ book.similarity }}</span><br />
+                    <span class="description">Description: {{ book.text }}</span>
+                </li>
+                {% endfor %}
+            </ul>
+
+            {% if chatbot_reply %}
+                <div class="chatbot-section">
+                    <h2>Chatbot Summary</h2>
+                    <p>{{ chatbot_reply }}</p>
+                </div>
+            {% endif %}
+        {% elif chatbot_reply %}
+            <div class="chatbot-section">
+                <h2>Chatbot Reply</h2>
+                <p>{{ chatbot_reply }}</p>
+            </div>
+        {% else %}
+            <p>No book found. Try another query.</p>
+        {% endif %}
+    </div>
+
+    <script>
+        function submitTo(action, model) {
+            const form = document.getElementById('recommend-form');
+            form.action = action;
+            document.getElementById('model-input').value = model;
+        }
+    </script>
+</body>
+</html>
