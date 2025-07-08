@@ -58,7 +58,7 @@ Recommendation_Engine/
 ### 📊 3. Recommendation Output by sentence transformer
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/35d2fd52-7c26-45e1-8d9d-9ca2db75a4f3" />
 
-### 🔄 4. t8 chatbot answer
+### 🔄 4. t5 chatbot answer
 <img width="1920" height="1080" alt="Image" src="https://github.com/user-attachments/assets/cac67b39-ca58-4652-861b-3023de19238a" />
 
 ### 5.similarly deepseek also results query
