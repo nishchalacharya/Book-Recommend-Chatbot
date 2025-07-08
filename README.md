@@ -1,6 +1,6 @@
 # 📚 Book Recommendation Chatbot
 
-A semantic search-powered book recommendation system built using **FastAPI**, **Sentence Transformers**,** T5 and OpenAI Transformers** and **Supabase**. The chatbot takes natural language queries like _"suggest me some romantic books"_ and returns relevant book recommendations from the [Goodbooks-10k dataset](https://github.com/zygmuntz/goodbooks-10k).
+A semantic search-powered book recommendation system built using **FastAPI**, **Sentence Transformers**,** T5 and OpenAI Transformers** and **Supabase**. The chatbot takes natural language queries like _"suggest me some romantic books"_ and returns relevant book recommendations from the [Goodbooks-10k dataset](https://github.com/zygmuntz/goodbooks-10k)/ my cleaned_book_dataset.csv inside data folder
 
 ---
 
@@ -34,19 +34,20 @@ Recommendation_Engine/
 
 ```
 ## 📱 Screenshots
----
 
+### 🧾 1. Database Table in Supabase
 ![Database](Screenshots/1.png)
-  **Database Structure:** can see columns associated with database.
 
-![Frontend](Screenshotschat
+### 💬 2. Chat UI Interface
+![Chat UI](Screenshots/first.png)
 
+### 📊 3. Recommendation Output by sentence transformer
+![Recommendation](Screenshots/4.png)
 
+### 🔄 4. t8 chatbot answer
+![t8 answer](Screenshots/last.png)
 
-
-
-
-
+### 5.similarly deepseek also results query
 
 ---
 
