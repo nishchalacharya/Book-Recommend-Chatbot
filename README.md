@@ -32,7 +32,7 @@ Recommendation_Engine/
 └── .env # Environment variables (API keys, DB URL)
 
 
-```
+
 ## 📱 Screenshots
 
 ### 🧾 1. Database Table in Supabase
@@ -63,7 +63,7 @@ Recommendation_Engine/
 
 ### 5.similarly deepseek also results query
 
----
+
 
 ## ⚙️ Installation
 
