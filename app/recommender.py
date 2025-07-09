@@ -13,7 +13,7 @@ def connect_db():
         port=6543,
         dbname='postgres',
         user='postgres.yajdnfumszppzcllnfrw',
-        password='mWGGeZ4OHo1JGvFe'
+        password='supabase_password'
     )
     
 # Main function to get k similar books 
