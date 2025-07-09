@@ -1,7 +1,7 @@
 
 
 # openai.api_base = "https://openrouter.ai/api/v1"
-# openai.api_key = "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"  # Replace with your actual OpenRouter API key
+# openai.api_key = "API_KEY"  # Replace with your actual OpenRouter API key
 
 
 
@@ -16,7 +16,7 @@ from openai import OpenAI
 
 client = OpenAI(
     base_url="https://openrouter.ai/api/v1",
-    api_key="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",
+    api_key="API_KEY",
 )
 
 def pass_value(query):
